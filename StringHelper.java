@@ -18,7 +18,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-import com.kt.service.webadmin.dto.AdminSessionDto;
 
 /**
  * TODO 클래스 설명 작성
@@ -348,7 +347,7 @@ public class StringHelper {
     }
 
 	public static String getClientIpAddr(HttpServletRequest request) {
-		
+
 		String[] HEADER_CLIENT_IP = { "X-Forwarded-For", "X-FORWARDED-FOR", "NS-CLIENT-IP", "HTTP_X_REAL_IP", "X-Real-IP", "X-RealIP", "REMOTE_ADDR",
 				"Proxy-Client-IP", "WL-Proxy-Client-IP", "HTTP_CLIENT_IP", "HTTP_X_FORWARDED_FOR"};
 

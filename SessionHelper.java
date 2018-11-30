@@ -50,8 +50,8 @@ public class SessionHelper {
             return false;
         }
 
-        String adminId = sessionDto.getLoginInfoDto().getMemberId();
-        LOG.debug("SessionHelper.isLogin() #adminId={}", adminId);
+        String memberId = sessionDto.getLoginInfoDto().getMemberId();
+        LOG.debug("SessionHelper.isLogin() #memberId={}", memberId);
 
         return true;
     }

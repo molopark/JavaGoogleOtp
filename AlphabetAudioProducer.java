@@ -1,4 +1,4 @@
-package com.kt.service.common.captcha;
+package com.molo.service.common.captcha;
 
 import java.io.BufferedInputStream;
 import java.io.ByteArrayOutputStream;
@@ -21,11 +21,9 @@ import javax.sound.sampled.AudioSystem;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.kt.service.common.controller.CodeController;
-
 
 public class AlphabetAudioProducer {
-    private final static Logger LOGGER = LogManager.getLogger(CodeController.class);
+    private final static Logger LOGGER = LogManager.getLogger(AlphabetAudioProducer.class);
 
 	private static final Map<String, String> AUDIO_MAP;
 
@@ -170,5 +168,5 @@ public class AlphabetAudioProducer {
 		//long end = System.currentTimeMillis();
 		//LOG.debug("response audio time = {}ms", end - start);
 	}
-	
+
 }
